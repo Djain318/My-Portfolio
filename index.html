@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="icon" type="images/x-icon" href="img\portfolio.jpg">
+
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+	<title>Darshan Jain Portfolio</title>
+
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<a href="#home" id="logo">Port<span>fo</span>lio</a>
+
+		<ul class="topnav">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#experience">Experiences</a></li>
+		</ul>
+
+		<a href="#contact" id="cont">Contact</a>
+
+		<div class="navmenu">
+			<label for="menu-icon">
+				<div id="icon"><i class="fa-solid fa-bars"></i></div>
+			</label>
+			<input type="checkbox" id="menu-icon">
+			<ul>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#experience">Experiences</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Home Section -->
+	<section class="home" id="home">
+		<div class="profile">
+			<div class="pic">
+				<div class="image">
+					<img src="img\profile.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Darshan Jain</h1>
+			<h3>Engineering <span>Undergrad</span></h3>
+			<p>
+				Currently in 3<sup>rd</sup> Year & looking for Internship opportunities in Software Domain to take my skills to
+				next level.
+			<p>
+			<div class="button">
+				<a href="#" download="">Resume</a>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- About Section -->
+	<section class="about" id="about">
+
+		<h1>About <span>Me</span></h1>
+		<h4><q> Thrillseeker </q></h4>
+		<div class="about-text">
+			<p>
+				I'm and enthusiastic folk that looks for challenging, interesting work and position from where I can learn and
+				grow.
+				By engaging myself in problem solving at various platforms like <b>Leetcode</b>, <b>Codechef</b> etc. I became
+				passionnate in this.
+			</p>
+		</div>
+
+		<h2>Education</h2>
+		<div class="education">
+			<div class="btech">
+				<h3>Shri G.S Institute of Technology & Science</h3>
+				<div class="timing">
+					<span id="time">2021 - 2025</span>
+					<span id="location">Indore</span>
+				</div>
+				<ul>
+					<li id="branch">B.Tech in Electrical & Electronics Engineering</li>
+					<li id="cgpa">CGPA : 7.62</li>
+				</ul>
+			</div>
+
+			<div class="jee-mains">
+				<h3>IIT - JEE Mains'21</h3>
+				<ul>
+					<li>Scored : <b>94.4%</b></li>
+					<li>Ranked <b>48k</b> among <b>1000k</b> candidates.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Skills</h2>
+		<div class="skills">
+			<div class="languages">
+				<h3>Languages</h3>
+				<ul>
+					<li>C </li>
+					<li>C++</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>PHP</li>
+				</ul>
+			</div>
+			<div class="tools">
+				<h3>Tools & Techniques</h3>
+				<ul>
+					<li>Data Structures & Algorithms</li>
+					<li>Object oriented Programming Skills</li>
+					<li>Bootstrap 5</li>
+					<li>Git / GitHub</li>
+					<li>VS Code</li>
+				</ul>
+			</div>
+			<div class="miscellaneous">
+				<h3>Miscellaneous</h3>
+				<ul>
+					<li>Problem Solving</li>
+					<li>Communication Skills</li>
+					<li>Leadership</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<!-- Project Section -->
+	<section class="projects" id="projects">
+		<h1><span>Pr</span>ojects</h1>
+
+		<div class="project-info">
+
+			<div class="car-rental">
+				<a class="github" href="" target="_blank">
+					<i class="fa-brands fa-square-github"></i>
+				</a>
+				<h3>Car Rental Management System</h3>
+				<div class="timing">
+					<span id="time">2021 - 2025</span>
+					<span id="location">Self</span>
+				</div>
+				<ul>
+					<li>Used <b>Object Oriented Programming Techniques (OOPs)</b>.</li>
+					<li>Admin can enter details of Car</li>
+					<li>User can register / login, book, see approx amount, review
+						history of orders (using classes, objects etc)</li>
+					<li>User's data is saved in database (by File I/O)</li>
+				</ul>
+			</div>
+
+			<div class="sleep-alarm">
+				<!-- <a class="github" href="" target="_blank">
+					<i class="fa-brands fa-square-github"></i>
+				</a> -->
+				<h3>Anti Sleep Alarm for Drivers</h3>
+				<div class="timing">
+					<span id="time">2021 - 2025</span>
+					<span id="location">Academic</span>
+				</div>
+				<ul>
+					<li>Used IR sensor & IC 555 time delay concept</li>
+					<li>Alert driver when of drowsy sleepy with a beep sound</li>
+					<li>Got a media coverage with <b>ANI, ABP News, Economic Times
+							and other National News too</b>.
+						<a href="https://www.youtube.com/watch?v=6GuwHCYrwn8&feature=youtu.be">ANI News</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="dekhosa">
+				<a class="github" href="https://github.com/Thrillseekr/DekhoSa" target="_blank">
+					<i class="fa-brands fa-square-github"></i>
+				</a>
+				<h3>DekhoSa - Get Movies & Shows</h3>
+				<div class="timing">
+					<span id="time">2021 - 2025</span>
+					<span id="location">Self</span>
+				</div>
+				<ul>
+					<li>Used <b>HTML, CSS</b></li>
+					<li>Build an interactive & <b>Responsive</b> webpage using <b>Flexbox</b></li>
+					<li>Categories are made for sorting different stuffs.</li>
+					<li><a href="https://www.youtube.com/watch?v=6GuwHCYrwn8&feature=youtu.be">Deployment Link</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<section class="experience" id="experience">
+		<h1><span>Ex</span>perience</h1>
+		<div class="experience-info">
+
+			<div class="gssoc">
+				<h3>GirlScript Summer of Code'23</h3>
+				<h4>Open Source Program</h2>
+					<div class="timing">
+						<span id="time">2021 - 2025</span>
+						<span id="location">Remote</span>
+					</div>
+					<ul>
+						<li>Worked on <b>HTML, CSS, Markdown, Git/Github</b></li>
+						<li>Contributed to <b>15</b> projects and merged 12 PRs</li>
+					</ul>
+			</div>
+
+			<div class="unacademy">
+				<h3>Sorting Hat Technologies (Unacademy)</h3>
+				<h4>Freelancing</h2>
+					<div class="timing">
+						<span id="time">2021 - 2025</span>
+						<span id="location">Remote</span>
+					</div>
+					<ul>
+						<li><b>Doubt Expert:</b> IIT-JEE Category Chemistry Subject</li>
+						<li>Assisted about <b>2500</b> learners by solving <b>1200+</b> problems</li>
+						<li>Rated <b>4.44 / 5</b> (1100+ positive reviews)</li>
+					</ul>
+			</div>
+		</div>
+	</section>
+	<hr>
+
+	<footer class="footer" id="contact">
+		<div class="details">
+
+			<!-- Logo -->
+			<h1>Hire<span> Me</span></h1>
+
+			<!-- Social Icons -->
+			<div class="social">
+				<a href="https://www.linkedin.com/in/darshanjain318/" target="_blank">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+				<a href="https://github.com/Thrillseekr?tab=repositories" target="_blank">
+					<i class="fa-brands fa-square-github"></i>
+				</a>
+				<a href="https://leetcode.com/im_dj318/" target="_blank">
+					<img src="img/leetcode.jpg" alt="leetcode">
+				</a>
+				<a href="https://www.codechef.com/users/im_dj318" target="_blank">
+					<img src="img/codechef.jpg" alt="codechef">
+				</a>
+			</div>
+		</div>
+		</div>
+
+		<!-- Information Section -->
+		<div class="info">
+			<span>Email Id :
+				<a href="mailto:darshanjain318@gmail.com" target="_blank">darshanjain318@gmail.com</a>
+			</span>
+
+			<span>Contact No. :
+				<a href="tel:(+91)8770464108">(+91)8770464108</a>
+			</span>
+		</div>
+
+		<!-- Last line of greetings -->
+		<div id="last-line">
+			<p>Designed with learnings by</p>
+			<a href="">Darshan Jain</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>
