@@ -682,12 +682,12 @@ img {
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info .firsttwo,
-.secondtwo {
+.experience-info .ex1,
+.ex2, .ex3 {
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
@@ -695,7 +695,6 @@ img {
 }
 
 .experience-info .videolan,
-.meritshot,
 .unacademy,
 .gssoc {
   margin: 50px 0%;
@@ -708,7 +707,6 @@ img {
 }
 
 .experience-info .videolan:hover,
-.meritshot:hover,
 .unacademy:hover,
 .gssoc:hover {
   transform: translateY(-5px) scale(1.05);
