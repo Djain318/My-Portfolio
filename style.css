@@ -32,17 +32,9 @@ body {
 /* Media Queries */
 @media only screen and (max-width: 980px) {
   #projects .project-info {
-    justify-content: center;
-    /* border: 2px solid #ffffff; */
-  }
-
-  #projects .project-info .car-rental,
-  #projects .project-info .sleep-alarm,
-  #projects .project-info .dekhosa {
-    margin: 20px;
-    width: 300px;
-    padding: 10px;
-    /* border: 2px solid #ffffff; */
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #ff1818; */
   }
 }
 
@@ -80,6 +72,12 @@ body {
     margin: 20px;
     /* border: 2px solid #ff1818; */
   }
+
+  #experience .exInfo {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid #ff1818; */
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -105,12 +103,6 @@ body {
   }
   #home .home-text h1 {
     font-size: 55px;
-  }
-
-  #experience .ex1,
-  .ex2, .ex3 {
-    margin-left: 60px;
-    margin-right: 60px;
   }
 }
 
@@ -571,6 +563,7 @@ img {
 
 .projects h1 {
   margin-top: 40px;
+  margin-bottom: 60px;
   font-size: 40px;
   /* border: 2px solid #ff0000; */
 }
@@ -582,17 +575,26 @@ img {
 .projects .project-info {
   position: relative;
   width: 100%;
+  margin-bottom: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  align-content: center;
+  /* border: 2px solid #ff0000; */
+}
+
+.projects .project-info .pro1,
+.pro2 {
+  position: relative;
+  align-content: center;
   /* border: 2px solid #ff0000; */
 }
 
 .project-info .car-rental,
 .sleep-alarm,
-.dekhosa {
-  margin: 100px 0px;
-  width: 300px;
+.oj {
+  margin-bottom: 60px;
+  width: 400px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px 5px var(--main-color);
@@ -602,13 +604,13 @@ img {
 
 .project-info .car-rental:hover,
 .sleep-alarm:hover,
-.dekhosa:hover {
+.oj:hover {
   transform: translateY(-5px) scale(1.05);
 }
 
 .car-rental .github i,
 .sleep-alarm .github i,
-.dekhosa .github i {
+.oj .github i {
   margin-bottom: 10px;
   color: #ffffff;
   font-size: 30px;
@@ -616,11 +618,11 @@ img {
 }
 
 .sleep-alarm a,
-.dekhosa a {
+.oj a {
   color: var(--main-color);
 }
 .sleep-alarm a:visited,
-.dekhosa a:visited {
+.oj a:visited {
   color: var(--main-color);
 }
 
@@ -663,6 +665,7 @@ img {
 
 .experience h1 {
   margin-top: 40px;
+  margin-bottom: 60px;
   font-size: 40px;
   /* border: 2px solid #ff0000; */
 }
@@ -671,25 +674,21 @@ img {
   color: var(--main-color);
 }
 
-.experience {
+.experience .exInfo {
   position: relative;
   width: 100%;
   margin-bottom: 60px;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
   /* border: 2px solid #ff0000; */
 }
 
-.experience .ex1, .ex2, .ex3 {
+.experience .exInfo .ex1,
+.ex2,
+.ex3 {
   position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
   align-content: center;
   /* border: 2px solid #ff0000; */
 }
@@ -697,8 +696,8 @@ img {
 .experience .videolan,
 .unacademy,
 .gssoc {
-  margin: 50px 0%;
-  width: 300px;
+  margin-bottom: 50px;
+  width: 320px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px 5px var(--main-color);
@@ -706,24 +705,41 @@ img {
   border: 2px ridge white;
 }
 
-.experience-info .videolan:hover,
+.videolan img {
+  width: 100px;
+  height: 100px;
+  margin: 5px 30%;
+
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.exInfo .videolan:hover,
 .unacademy:hover,
 .gssoc:hover {
   transform: translateY(-5px) scale(1.05);
 }
 
-.experience-info h3 {
+.exInfo h3 {
   text-align: center;
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info h4 {
+.exInfo h4 {
   color: #ccc;
   text-align: center;
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info .timing {
+.exInfo .timing {
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -732,20 +748,20 @@ img {
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info li {
+.exInfo li {
   list-style-type: disc;
 }
 
-.experience-info ul {
+.exInfo ul {
   padding-left: 20px;
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info ul b {
+.exInfo ul b {
   color: #ccc;
 }
 
-.experience-info .videolan .gitlab i {
+.exInfo .videolan .gitlab i {
   color: #fff;
 }
 
