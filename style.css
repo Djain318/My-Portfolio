@@ -107,8 +107,8 @@ body {
     font-size: 55px;
   }
 
-  #experience .experience-info .firsttwo,
-  .secondtwo {
+  #experience .ex1,
+  .ex2, .ex3 {
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -671,19 +671,19 @@ img {
   color: var(--main-color);
 }
 
-.experience .experience-info {
+.experience {
   position: relative;
   width: 100%;
   margin-bottom: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: center;
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info .ex1,
-.ex2, .ex3 {
+.experience .ex1, .ex2, .ex3 {
   position: relative;
   width: 100%;
   display: flex;
@@ -694,7 +694,7 @@ img {
   /* border: 2px solid #ff0000; */
 }
 
-.experience-info .videolan,
+.experience .videolan,
 .unacademy,
 .gssoc {
   margin: 50px 0%;
