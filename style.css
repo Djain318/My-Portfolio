@@ -30,10 +30,23 @@ body {
 }
 
 /* Media Queries */
+@media only screen and (max-width: 1500px) {
+  #home .profile {
+    width: 500px;
+    height: 350px;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   #projects .project-info {
     display: flex;
     flex-direction: column;
+    /* border: 2px solid #ff1818; */
+  }
+
+  #home .profile {
+    width: 500px;
+    height: 350px;
     /* border: 2px solid #ff1818; */
   }
 }
@@ -57,8 +70,8 @@ body {
     font-size: 45px;
   }
   #home .profile {
-    width: 550px;
-    height: 330px;
+    width: 500px;
+    height: 350px;
   }
 
   #about .skills {
@@ -78,6 +91,12 @@ body {
     flex-direction: column;
     /* border: 2px solid #ff1818; */
   }
+
+  #home .profile {
+    width: 500px;
+    height: 350px;
+    /* border: 2px solid #ff1818; */
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -95,6 +114,7 @@ body {
     top: 20px;
     width: 250px;
     height: 250px;
+    /* border: 2px solid #ffffff; */
   }
   #home .home-text {
     position: relative;
@@ -353,55 +373,28 @@ header #cont:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #202020;
-  border-radius: 50%;
+  border-radius: 20%;
   overflow: hidden;
-  box-shadow: 0px 0px 10px 3px #00a2ff;
-  /* border: 2px solid white; */
+  border: 2px ridge white;
+
+  transition: box-shadow 2s ease-in-out;
+  animation: move_border 1s ease-in-out 1s infinite forwards;
 }
 
-.pic::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  background: linear-gradient(450deg, #fffb00, rgb(255, 0, 43));
-  transition: all 1s ease-in-out;
-  animation: animate 4s infinite ease-in-out;
-}
-
-.pic::after {
-  content: "";
-  position: absolute;
-  background: #2a2a2a;
-  border-radius: 50%;
-  inset: 5px;
-  z-index: 1;
-  transition: all 0s ease-in-out;
-}
-
-.image {
-  position: absolute;
-  border-radius: 50%;
-  inset: 5px;
-  z-index: 3;
-  border: 1px solid #202020;
+@keyframes move_border {
+  0% {
+    box-shadow: 0px 0px 20px 5px cadetblue inset;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 10px cadetblue inset;
+  }
 }
 
 img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 20%;
   /* background: red; */
-}
-
-@keyframes animate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* About Me Section */
