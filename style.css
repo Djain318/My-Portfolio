@@ -522,6 +522,8 @@ img {
   box-shadow: 0px 0px 5px 5px var(--main-color);
   transition: all 0.4s ease-in-out;
   border: 2px ridge white;
+  height: 10px; 
+  min-height: fit-content;
 }
 
 .skills .languages:hover,
